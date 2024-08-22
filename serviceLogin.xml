@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+		<listeners>
+<listener class-name="com.utility.listner"></listener>
+</listeners>
+<parameter name="browser_name" value="chrome"></parameter>
+
+  
+             <!--     Servic Module-->
+           
+                   <test  name="ServiceLogin" enabled="false">
+			      <parameter name="browser_name" value="chrome"></parameter>
+		   <classes>
+				 <class name="serviceLogin_Modules.BookNowService"/>  
+		<!--		 <class name="serviceLogin_Modules.GoodLife"/>  
+				 <class name="serviceLogin_Modules.Login_MyProfile"/>  
+				 <class name="serviceLogin_Modules.XclanService"/>  -->
+		   	 </classes>		   
+	      </test>
+	      
+	      
+</suite> <!-- Suite -->

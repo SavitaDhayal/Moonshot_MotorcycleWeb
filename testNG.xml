@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.utility.listner"></listener>
+	</listeners>
+	<!-- Home page-->
+	<test name="Home-Page" enabled="false">
+		<classes>
+			<class name="homePage.ExploreOurProducts" />
+			<!--	<class name="homePage.HomePage_Execution"/>	-->
+		</classes>
+	</test>
+	
+	
+	<!-- Practical section -->
+	<test name="MotorCycle-Practical-all classes" enabled="false">
+		<parameter name="browser_name" value="chrome"></parameter>
+		<classes>
+			<class name="motorcycleModule.Motorcycles_PracticalPage" />
+			<class name="motorcycleModule.Practical_ProductPage_HF100" />
+			<class name="motorcycleModule.Practical_ProductPage_HFDeluxe" />
+			<class name="motorcycleModule.Practical_ProductPage_Splendorplus" />
+			<class name="motorcycleModule.Practical_ProductPage_SplendorPlusXTec" />
+		</classes>
+	</test>
+	
+	
+	<!-- Executive section -->
+	<!-- Executive product Page === All Bikes-->
+	<test name="MotorCycle-Exe-all classes" enabled="true">
+		<parameter name="browser_name" value="chrome"></parameter>
+		<classes>
+			<class name="motorcycleModule.Motorcycle_ExecutiveSection" />
+			
+			<class name="motorcycleModule.Executive_ProductPage_SuperSplendorXtec" />
+			
+		</classes>
+	</test>
+	<!-- Perfromance product Page === All Bikes pages-->
+	<test name="MotorCycle-Perfromance-all classes" enabled="false">
+		<parameter name="browser_name" value="chrome"></parameter>
+		<classes>
+			<class name="motorcycleModule.Motorcycle_PerformanceSection" />
+			<class name="motorcycleModule.Perfromance_ProductPage_XTreme200S4V" />
+			<class name="motorcycleModule.Perfromance_ProductPage_XPulse2004V" />
+			<class name="motorcycleModule.Perfromance_ProductPage_XPulse200T4V" />
+			<class name="motorcycleModule.Perfromance_ProductPage_Xtreme160R" />
+			<class name="motorcycleModule.Perfromance_ProductPage_Xtreme160R4V" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->

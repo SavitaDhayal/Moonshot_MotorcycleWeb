@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Scooter">
+             <!-- Scooters-->
+               
+           <test  name="Scooter Module" enabled="false">
+			      <parameter name="browser_name" value="chrome"></parameter>
+		   <classes>
+				 <class name="scootersModule.CateloguePage_Scooters"/>  
+				 <class name="scootersModule.ProductPage_DestinyPrime"/>  
+				 <class name="scootersModule.ScooterPageNavigations"/>  
+		   	 </classes>		   
+	      </test>
+</suite> <!-- Scooter -->
